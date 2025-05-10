@@ -73,6 +73,10 @@ status_api:
 
 4. **Access the Real-Time Web Dashboard:**
 
+<p align="center">
+  <img src="uptime_monitor/img/Screenshot.png" alt="Uptime Monitor Logo" width="600"/>
+</p>
+
    Open your browser and visit:
 
    ```
