@@ -1,0 +1,17 @@
+interval_minutes: 2
+latency_threshold_ms: 500
+log_retention_days: 30
+
+urls:
+  - https://ezample.com
+  - https://example2.com
+
+notifier:
+  telegram:
+    token: "YOUR_TELEGRAM_TOKEN"
+    chat_id: "YOUR_CHAT_ID"
+
+status_api:
+  enabled: true
+  host: "0.0.0.0"
+  port: 8080

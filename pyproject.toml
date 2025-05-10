@@ -1,0 +1,20 @@
+[project]
+name = "uptime-monitor"
+version = "0.1.1"
+description = "CLI uptime and latency monitor for websites"
+authors = [{ name = "Croketillo", email = "croketillo@gmail.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "aiohttp>=3.8.0",
+    "PyYAML>=6.0",
+    "click>=8.1.0",
+    "requests"
+]
+[tool.setuptools.package-data]
+"uptime_monitor" = ["img/*"]
+
+[project.scripts]
+uptime-monitor = "uptime_monitor.cli:main"

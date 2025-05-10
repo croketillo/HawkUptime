@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  uptime-monitor:
+    build: .
+    container_name: uptime-monitor
+    restart: always
+    working_dir: /app/uptime_monitor
+    volumes:
+      - ./uptime_monitor/config.yaml:/app/uptime_monitor/config.yaml
+      - ./uptime_monitor/logs:/app/uptime_monitor/logs
+    ports:
+      - "8080:8080" 
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Europe/Madrid
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
