@@ -1,7 +1,7 @@
 [project]
 name = "uptime-monitor"
-version = "0.1.1"
-description = "CLI uptime and latency monitor for websites"
+version = "0.1.2"
+description = "Uptime and latency monitor for websites"
 authors = [{ name = "Croketillo", email = "croketillo@gmail.com" }]
 license = "MIT"
 readme = "README.md"
