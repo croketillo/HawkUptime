@@ -4,13 +4,10 @@ from typing import List, Optional
 
 
 class ConfigError(Exception):
-    """Custom exception for configuration errors."""
     pass
 
 
 class Config:
-    """Represents the application configuration loaded from YAML."""
-    
     def __init__(self, interval_minutes: int, latency_threshold_ms: int, urls: List[str], telegram_token: Optional[str], telegram_chat_id: Optional[str]):
         self.interval_minutes = interval_minutes
         self.latency_threshold_ms = latency_threshold_ms
@@ -20,7 +17,6 @@ class Config:
 
     @staticmethod
     def load_from_file(file_path: str = "config.yaml") -> "Config":
-        """Load configuration from a YAML file."""
         path = Path(file_path)
         if not path.is_file():
             raise ConfigError(f"Configuration file not found: {file_path}")
@@ -50,4 +46,3 @@ class Config:
 
         except KeyError as e:
             raise ConfigError(f"Missing required configuration key: {e}")
-

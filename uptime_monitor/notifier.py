@@ -4,8 +4,6 @@ import logging
 
 
 class TelegramNotifier:
-    """Notifier for sending messages to a Telegram chat using Bot API."""
-
     def __init__(self, token: Optional[str], chat_id: Optional[str], logger: Optional[logging.Logger] = None):
         self.token = token
         self.chat_id = chat_id
@@ -15,11 +13,9 @@ class TelegramNotifier:
             self.logger.warning("TelegramNotifier is not fully configured. Notifications will be skipped.")
 
     def is_configured(self) -> bool:
-        """Check if notifier is properly configured."""
         return bool(self.token and self.chat_id)
 
     def send_message(self, message: str) -> None:
-        """Send a message to the configured Telegram chat."""
         if not self.is_configured():
             self.logger.warning("Attempted to send a notification, but TelegramNotifier is not configured.")
             return
