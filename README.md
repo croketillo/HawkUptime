@@ -2,7 +2,7 @@
   <img src="uptime_monitor/img/logo.png" alt="Uptime Monitor Logo" width="300"/>
 </p>
 
-A containerized tool to monitor the uptime and latency of your websites.
+<p align="center">A containerized tool to monitor the uptime and latency of your websites.</p>
 
 ## Features
 
