@@ -1,6 +1,8 @@
-# Uptime Monitor
+<p align="center">
+  <img src="uptime_monitor/img/logo.png" alt="Uptime Monitor Logo" width="300"/>
+</p>
 
-A containerized CLI tool to monitor the uptime and latency of your websites.
+A containerized tool to monitor the uptime and latency of your websites.
 
 ## Features
 
