@@ -118,7 +118,7 @@ class StatusServer:
                 <p>Last updated: {timestamp}</p>
                 {cards_html}
                 <footer>
-                    HawkUptime Monitor &copy; 2025
+                    HawkUptime Monitor v0.1.3 &copy; 2025
                 </footer>
             </div>
         </body>

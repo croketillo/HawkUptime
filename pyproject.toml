@@ -1,6 +1,6 @@
 [project]
-name = "uptime-monitor"
-version = "0.1.2"
+name = "HawkUptime"
+version = "0.1.3"
 description = "Uptime and latency monitor for websites"
 authors = [{ name = "Croketillo", email = "croketillo@gmail.com" }]
 license = "MIT"

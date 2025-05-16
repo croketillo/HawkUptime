@@ -3,11 +3,11 @@ version: "3.9"
 services:
   uptime-monitor:
     build: .
-    container_name: uptime-monitor
+    container_name: HawkUptime
     restart: always
-    working_dir: /app/uptime_monitor
+    working_dir: /app/HawkUptime
     volumes:
-      - ./uptime_monitor/config.yaml:/app/uptime_monitor/config.yaml
+      - ./uptime_monitor/config.yaml:/app/HawkUptime/config.yaml
       - ./uptime_monitor/logs:/app/uptime_monitor/logs
     ports:
       - "8080:8080" 

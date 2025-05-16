@@ -4,7 +4,7 @@ FROM python:3.12-slim
 
 # Metadata for documentation and registry visibility
 LABEL maintainer="croketillo@gmail.com"
-LABEL version="0.1.2"
+LABEL version="0.1.3"
 LABEL description="HawkUptime Monitor - Periodic uptime and latency monitoring with real-time web dashboard"
 
 

@@ -3,7 +3,7 @@ latency_threshold_ms: 500
 log_retention_days: 30
 
 urls:
-  - https://ezample.com
+  - https://example.com
   - https://example2.com
 
 notifier:
